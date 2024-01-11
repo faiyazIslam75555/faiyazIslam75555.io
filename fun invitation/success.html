@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #e4db36; 
+
+    }
+
+    #successMessage {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #backLink {
+        font-size: 20px; /* Increased font size */
+        padding: 15px 30px; /* Increased padding */
+        cursor: pointer;
+        position: absolute;
+        background-color: #b82626; /* Background color for Yes and No */
+        color: #dad8d8; /* Text color for Yes and No */
+        border-radius: 18px; /* Rounded corners */
+        display: inline-block; /* Add this to allow setting a border */
+        border: 1px solid #040c11; /* Border color for Yes and No */
+        box-sizing: border-box; /* Include border in width and height */
+    }
+  </style>
+</head>
+<body>
+
+<div id="successMessage">Yeee, let's go!</div>
+
+
+<div id="gifContainer">
+    <img src="yess-yes.gif" alt="Please GIF">
+</div>
+ 
+
+<div id="backLink" onclick="goBack()">Back to Ask again</div>
+
+<script>
+  function goBack() {
+    window.location.href = 'index.html';
+  }
+</script>
+
+</body>
+</html>
